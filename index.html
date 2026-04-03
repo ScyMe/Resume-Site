@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scylla Melander — IT Professional</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="site">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="avatar">SM</div>
+    <div class="hero-text">
+      <h1>Scylla Melander</h1>
+      <p>IT Professional &amp; Systems Enthusiast</p>
+      <div class="badge-row">
+        <span class="badge">Networking</span>
+        <span class="badge">Virtualization</span>
+        <span class="badge">Linux</span>
+        <span class="badge">Cloud</span>
+        <span class="badge">Cybersecurity</span>
+        <span class="badge">Homelab</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav>
+    <a class="active" onclick="show('skills', this)">Skills</a>
+    <a onclick="show('experience', this)">Experience</a>
+    <a onclick="show('certs', this)">Certifications</a>
+    <a onclick="show('homelab', this)">Homelab</a>
+    <a onclick="show('contact', this)">Contact</a>
+  </nav>
+
+  <!-- Skills -->
+  <div id="skills" class="section active">
+    <div class="section-title">Technical skills</div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="sk-cat">Networking</div>
+        <ul>
+          <li>TCP/IP, DNS, DHCP</li>
+          <li>VLANs &amp; Subnetting</li>
+          <li>Firewall configuration</li>
+          <li>VPN (WireGuard, OpenVPN)</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="sk-cat">Virtualization</div>
+        <ul>
+          <li>Proxmox VE</li>
+          <li>VMware ESXi</li>
+          <li>Docker &amp; LXC</li>
+          <li>Kubernetes (k3s)</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="sk-cat">Operating Systems</div>
+        <ul>
+          <li>Linux (Debian, Ubuntu)</li>
+          <li>Windows Server</li>
+          <li>Active Directory</li>
+          <li>TrueNAS / ZFS</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="sk-cat">Cloud &amp; DevOps</div>
+        <ul>
+          <li>AWS / Azure basics</li>
+          <li>Terraform</li>
+          <li>Ansible</li>
+          <li>CI/CD pipelines</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="sk-cat">Security</div>
+        <ul>
+          <li>Intrusion detection</li>
+          <li>Network monitoring</li>
+          <li>Vulnerability scanning</li>
+          <li>Zero-trust networking</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="sk-cat">Scripting</div>
+        <ul>
+          <li>Bash / Shell</li>
+          <li>PowerShell</li>
+          <li>Python basics</li>
+          <li>YAML / Ansible playbooks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div id="experience" class="section">
+    <div class="section-title">Work experience</div>
+    <div class="timeline">
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="job-title">IT Support Specialist</div>
+            <div class="job-company">Your Company Name</div>
+          </div>
+          <div class="job-date">2022 – Present</div>
+        </div>
+        <div class="job-desc">Provided tier 1–2 technical support, managed endpoint devices, maintained network infrastructure, and supported Active Directory administration for a team of 100+ users.</div>
+      </div>
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Help Desk Technician</div>
+            <div class="job-company">Previous Company</div>
+          </div>
+          <div class="job-date">2020 – 2022</div>
+        </div>
+        <div class="job-desc">Handled hardware/software troubleshooting, user onboarding, and device imaging. Documented resolutions in a ticketing system (ServiceNow / Jira).</div>
+      </div>
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Phone Technical Support Agent</div>
+            <div class="job-company">Mobile Carrier / Tech Support Company</div>
+          </div>
+          <div class="job-date">2018 – 2020</div>
+        </div>
+        <div class="job-desc">Provided remote troubleshooting for mobile device hardware and software issues, guiding customers through diagnostics and escalating complex cases as needed.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certifications -->
+  <div id="certs" class="section">
+    <div class="section-title">Certifications</div>
+    <div class="cert-list">
+      <div class="cert">
+        <div class="cert-dot"></div>
+        <div><div class="cert-name">CompTIA A+</div><div class="cert-org">CompTIA</div></div>
+        <div class="cert-year">2019</div>
+      </div>
+      <div class="cert">
+        <div class="cert-dot"></div>
+        <div><div class="cert-name">CompTIA Network+</div><div class="cert-org">CompTIA</div></div>
+        <div class="cert-year">2021</div>
+      </div>
+      <div class="cert">
+        <div class="cert-dot"></div>
+        <div><div class="cert-name">CompTIA Security+</div><div class="cert-org">CompTIA</div></div>
+        <div class="cert-year">2022</div>
+      </div>
+      <div class="cert">
+        <div class="cert-dot"></div>
+        <div><div class="cert-name">Add your cert here</div><div class="cert-org">Issuing organization</div></div>
+        <div class="cert-year">Year</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Homelab -->
+  <div id="homelab" class="section">
+    <div class="section-title">Homelab</div>
+    <p class="homelab-intro">Over the years I've built and maintained a personal homelab environment for self-hosting, learning, and experimenting with enterprise-grade technologies at home. Here's a look at what's running.</p>
+    <div class="lab-grid">
+      <div class="lab-card">
+        <div class="lab-icon">🖥</div>
+        <h4>Compute cluster</h4>
+        <p>Multi-node Proxmox VE cluster running VMs and LXC containers for various self-hosted services.</p>
+        <span class="lab-tag">Proxmox</span>
+      </div>
+      <div class="lab-card">
+        <div class="lab-icon">💾</div>
+        <h4>NAS &amp; storage</h4>
+        <p>TrueNAS Scale with ZFS RAIDZ2 array for redundant, high-capacity storage and backups.</p>
+        <span class="lab-tag">TrueNAS</span>
+      </div>
+      <div class="lab-card">
+        <div class="lab-icon">🌐</div>
+        <h4>Network stack</h4>
+        <p>Managed switch with VLANs separating IoT, trusted, and lab traffic. pfSense/OPNsense firewall.</p>
+        <span class="lab-tag">pfSense</span>
+      </div>
+      <div class="lab-card">
+        <div class="lab-icon">📦</div>
+        <h4>Container services</h4>
+        <p>Docker Compose and k3s cluster running Nginx, Nextcloud, Jellyfin, Vaultwarden, and more.</p>
+        <span class="lab-tag">Docker</span>
+      </div>
+      <div class="lab-card">
+        <div class="lab-icon">🔒</div>
+        <h4>Security &amp; monitoring</h4>
+        <p>Uptime Kuma, Grafana + Prometheus stack, and Wazuh for SIEM and intrusion detection.</p>
+        <span class="lab-tag">Grafana</span>
+      </div>
+      <div class="lab-card">
+        <div class="lab-icon">☁️</div>
+        <h4>Remote access</h4>
+        <p>WireGuard VPN for secure tunneling. Cloudflare Tunnels for public-facing services.</p>
+        <span class="lab-tag">WireGuard</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact" class="section">
+    <div class="section-title">Contact</div>
+    <div class="contact-grid">
+      <div class="contact-row">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">scylla@example.com</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">linkedin.com/in/scyllamelander</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">github.com/scyllamelander</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function show(id, el) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
